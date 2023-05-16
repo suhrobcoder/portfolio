@@ -2,7 +2,6 @@ import 'package:flutter/foundation.dart';
 import 'package:folio/configs/configs.dart';
 import 'package:folio/utils/about_utils.dart';
 import 'package:folio/utils/utils.dart';
-import 'package:folio/utils/work_utils.dart';
 
 import 'package:folio/widget/custom_text_heading.dart';
 import 'package:universal_html/html.dart' as html;
@@ -31,10 +30,6 @@ class AboutMobile extends StatelessWidget {
             text: 'Get to know me :)',
           ),
           Space.y1!,
-          Image.asset(
-            StaticUtils.mobilePhoto,
-            height: height * 0.27,
-          ),
           SizedBox(
             height: height * 0.03,
           ),
@@ -96,11 +91,11 @@ class AboutMobile extends StatelessWidget {
           ),
           const AboutMeData(
             data: "Name",
-            information: "Muhammad Hamza",
+            information: "Suhrob Qodirberdiyev",
           ),
           const AboutMeData(
             data: "Email",
-            information: "hamza.6.shakeel@gmail.com",
+            information: "suhrobcoder@gmail.com",
           ),
           Space.y!,
           OutlinedButton(
@@ -111,20 +106,6 @@ class AboutMobile extends StatelessWidget {
                     : openURL(StaticUtils.resume);
               }),
           Space.y!,
-          Wrap(
-              alignment: WrapAlignment.center,
-              crossAxisAlignment: WrapCrossAlignment.center,
-              children: WorkUtils.logos
-                  .asMap()
-                  .entries
-                  .map(
-                    (e) => CommunityIconBtn(
-                      icon: e.value,
-                      link: WorkUtils.communityLinks[e.key],
-                      height: WorkUtils.communityLogoHeight[e.key],
-                    ),
-                  )
-                  .toList()),
         ],
       ),
     );

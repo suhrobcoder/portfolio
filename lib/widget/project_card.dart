@@ -8,6 +8,7 @@ import 'package:provider/provider.dart';
 class ProjectCard extends StatefulWidget {
   final String? banner;
   final String? projectLink;
+  final String? storeLink;
   final String? projectIcon;
   final String projectTitle;
   final String projectDescription;
@@ -18,6 +19,7 @@ class ProjectCard extends StatefulWidget {
     this.banner,
     this.projectIcon,
     this.projectLink,
+    this.storeLink,
     this.projectIconData,
     required this.projectTitle,
     required this.projectDescription,
@@ -40,11 +42,7 @@ class ProjectCardState extends State<ProjectCard> {
       hoverColor: Colors.transparent,
       splashColor: Colors.transparent,
       highlightColor: Colors.transparent,
-      onTap: widget.projectLink == null
-          ? () {}
-          : () => openURL(
-                widget.projectLink!,
-              ),
+      onLongPress: () {},
       onHover: (isHovering) {
         if (isHovering) {
           setState(() {

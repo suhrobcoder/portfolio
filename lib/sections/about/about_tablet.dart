@@ -1,7 +1,6 @@
 import 'package:folio/configs/configs.dart';
 import 'package:folio/utils/about_utils.dart';
 import 'package:folio/utils/utils.dart';
-import 'package:folio/utils/work_utils.dart';
 
 import 'package:folio/widget/custom_text_heading.dart';
 import 'package:universal_html/html.dart' as html;
@@ -35,10 +34,6 @@ class AboutTab extends StatelessWidget {
             ),
           ),
           Space.y1!,
-          Image.asset(
-            StaticUtils.mobilePhoto,
-            height: height * 0.27,
-          ),
           SizedBox(
             height: height * 0.03,
           ),
@@ -98,11 +93,11 @@ class AboutTab extends StatelessWidget {
                 children: const [
                   AboutMeData(
                     data: "Name",
-                    information: "Muhammad Hamza",
+                    information: "Suhrob Qodirberdiyev",
                   ),
                   AboutMeData(
                     data: "Age",
-                    information: "24",
+                    information: "23",
                   ),
                 ],
               ),
@@ -114,11 +109,11 @@ class AboutTab extends StatelessWidget {
                 children: const [
                   AboutMeData(
                     data: "Email",
-                    information: "hamza.6.shakeel@gmail.com",
+                    information: "suhrobcoder@gmail.com",
                   ),
                   AboutMeData(
                     data: "From",
-                    information: "Attock, PK",
+                    information: "Turtkul, UZ",
                   ),
                 ],
               ),
@@ -148,21 +143,6 @@ class AboutTab extends StatelessWidget {
                     ),
                   ),
                 ),
-              ),
-              SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                    children: WorkUtils.logos
-                        .asMap()
-                        .entries
-                        .map(
-                          (e) => CommunityIconBtn(
-                            icon: e.value,
-                            link: WorkUtils.communityLinks[e.key],
-                            height: WorkUtils.communityLogoHeight[e.key],
-                          ),
-                        )
-                        .toList()),
               ),
             ],
           )

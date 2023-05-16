@@ -8,11 +8,11 @@ class ScrollProvider extends ChangeNotifier {
 
   scroll(int index) {
     double offset = index == 1
-        ? 270
+        ? 220
         : index == 2
-            ? 255
+            ? 200
             : index == 3
-                ? 250
+                ? 260
                 : 245;
     controller.animateTo(
       AppDimensions.normalize(

@@ -16,17 +16,6 @@ class HomeMobile extends StatelessWidget {
       height: size.height * 1.02,
       child: Stack(
         children: [
-          Positioned(
-            bottom: 0.0,
-            right: -AppDimensions.normalize(25),
-            child: Opacity(
-              opacity: 0.9,
-              child: Image.asset(
-                StaticUtils.blackWhitePhoto,
-                height: AppDimensions.normalize(150),
-              ),
-            ),
-          ),
           Container(
             margin: EdgeInsets.fromLTRB(
               AppDimensions.normalize(10),
@@ -55,14 +44,14 @@ class HomeMobile extends StatelessWidget {
                 ),
                 Space.y!,
                 Text(
-                  "Muhammad",
+                  "Suhrob",
                   style: AppText.h3!.copyWith(
                     fontFamily: 'Montserrat',
                     fontWeight: FontWeight.w100,
                   ),
                 ),
                 Text(
-                  "Hamza",
+                  "Qodirberdiyev",
                   style: AppText.h3b!.copyWith(
                     height: 1,
                   ),
@@ -82,12 +71,7 @@ class HomeMobile extends StatelessWidget {
                           textStyle: AppText.b1,
                         ),
                         TyperAnimatedText(
-                          ' UI/UX Enthusiast',
-                          speed: const Duration(milliseconds: 50),
-                          textStyle: AppText.b1,
-                        ),
-                        TyperAnimatedText(
-                          ' A friend :)',
+                          ' Android Developer',
                           speed: const Duration(milliseconds: 50),
                           textStyle: AppText.b1,
                         ),

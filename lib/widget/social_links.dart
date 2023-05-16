@@ -26,13 +26,21 @@ class SocialLinks extends StatelessWidget {
               child: IconButton(
                 highlightColor: Colors.white54,
                 splashRadius: AppDimensions.normalize(12),
-                icon: Image.network(
-                  e.value,
-                  color: appProvider.isDark ? Colors.white : Colors.black,
-                  height: Responsive.isMobile(context)
-                      ? AppDimensions.normalize(10)
-                      : null,
-                ),
+                icon: e.value.startsWith("http")
+                    ? Image.network(
+                        e.value,
+                        color: appProvider.isDark ? Colors.white : Colors.black,
+                        height: Responsive.isMobile(context)
+                            ? AppDimensions.normalize(10)
+                            : null,
+                      )
+                    : Image.asset(
+                        e.value,
+                        color: appProvider.isDark ? Colors.white : Colors.black,
+                        height: Responsive.isMobile(context)
+                            ? AppDimensions.normalize(10)
+                            : null,
+                      ),
                 iconSize: Responsive.isMobile(context)
                     ? AppDimensions.normalize(10)
                     : AppDimensions.normalize(15),

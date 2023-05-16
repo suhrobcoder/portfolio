@@ -4,7 +4,6 @@ import 'package:folio/constants.dart';
 import 'package:folio/utils/about_utils.dart';
 
 import 'package:folio/utils/utils.dart';
-import 'package:folio/utils/work_utils.dart';
 import 'package:folio/widget/about_me_data.dart';
 import 'package:folio/widget/community_button.dart';
 import 'package:folio/widget/custom_text_heading.dart';
@@ -33,12 +32,7 @@ class AboutDesktop extends StatelessWidget {
           Space.y1!,
           Row(
             children: [
-              Expanded(
-                child: Image.asset(
-                  StaticUtils.coloredPhoto,
-                  height: height * 0.7,
-                ),
-              ),
+              const SizedBox(width: 72),
               Expanded(
                 flex: width < 1230 ? 2 : 1,
                 child: Container(
@@ -102,11 +96,11 @@ class AboutDesktop extends StatelessWidget {
                             children: const [
                               AboutMeData(
                                 data: "Name",
-                                information: "Muhammad Hamza",
+                                information: "Suhrob Qodirberdiyev",
                               ),
                               AboutMeData(
                                 data: "Age",
-                                information: "24",
+                                information: "23",
                               ),
                             ],
                           ),
@@ -116,11 +110,11 @@ class AboutDesktop extends StatelessWidget {
                             children: const [
                               AboutMeData(
                                 data: "Email",
-                                information: "hamza.6.shakeel@gmail.com",
+                                information: "suhrobcoder@gmail.com",
                               ),
                               AboutMeData(
                                 data: "From",
-                                information: "Attock, PK",
+                                information: "Turtkul, UZ",
                               ),
                             ],
                           ),
@@ -146,16 +140,6 @@ class AboutDesktop extends StatelessWidget {
                             width: AppDimensions.normalize(30),
                             height: AppDimensions.normalize(0.5),
                           ),
-                          ...WorkUtils.logos.asMap().entries.map(
-                                (e) => Expanded(
-                                  child: CommunityIconBtn(
-                                    icon: e.value,
-                                    link: WorkUtils.communityLinks[e.key],
-                                    height:
-                                        WorkUtils.communityLogoHeight[e.key],
-                                  ),
-                                ),
-                              )
                         ],
                       ),
                     ],
