@@ -5,6 +5,7 @@ class ProjectUtils {
     "assets/projects/wordle_banner.png",
     "assets/projects/kpop_banner.png",
     "assets/projects/taxi_banner.png",
+    "assets/projects/spend_tracker_banner.png",
   ];
 
   static const List<String> icons = [
@@ -13,6 +14,7 @@ class ProjectUtils {
     "assets/projects/wordle_icon.png",
     "assets/projects/kpop_icon.png",
     "assets/projects/taxi_icon.png",
+    "assets/projects/spend_tracker.png",
   ];
 
   static const List<String> titles = [
@@ -21,6 +23,7 @@ class ProjectUtils {
     "Wordle Clone",
     "Kpop Xplore",
     "Lider Taxi",
+    "Spend Tracker",
   ];
 
   static const List<String> platform = [
@@ -29,35 +32,33 @@ class ProjectUtils {
     "assets/projects/flutter.png",
     "assets/projects/flutter.png",
     "assets/projects/flutter.png",
+    "assets/projects/flutter.png",
   ];
 
   static const List<String> description = [
-    "A very unique dart package to uplift the snackbar experience in flutter. Available at pub.dev now!",
-    "Application of Holy book of Muslims, Al-Qur'an. Developed using Flutter. Powered with live RestAPI given in README.md",
-    "A Phramacy app developed using Flutter powered with Firebase as database with Doctor and Patient panels.",
-    "Here I am is an Alert app that Sends alert SMS holding your location (Address and Google Maps) to your loved ones.",
-    "A live trakcer for COVID19 stats across the Globe and my Home country Pakistan. It uses APIs so the data is live.",
-    "Tried to clone the famous Chat Heads by Facebook Messenger using Flutter. Its basically in-app not exactly like the original chat head.",
-    "Flutter Official Site clone using Flutter Web. Try the live site here. For the time being its not responsive fully so there might be responsiveness issues.",
-    "A concept of Music App developed using Flutter. Having functionality of playing Audio.",
-    "A simple GUI based Java application that sends file from Client to Server but not the other way around.",
-    "A concept app for self-services at various restaurants now a days. More like a Restaurant Ordering System.",
-    "Its my end semester project. The whole design I developed here is an inspiration from my favortie Flutter Developer Marcin Szałek and his blog Fidev."
+    "Recipe app helps you find recipes",
+    "With this app you can explore popular and upcoming movies",
+    "This app is wordle game clone in uzbek",
+    "This app helps you explore kpop groups and idols",
+    "Taxi driver app created in flutter",
+    "An app helps you record your money transactions",
   ];
 
   static const List<String> githubLinks = [
-    "https://pub.dev/packages/awesome_snackbar_content",
-    "https://github.com/mhmzdev/The_Holy_Quran_App",
-    "https://github.com/mhmzdev/MedKit-Pharmacy-App-Using-Flutter",
-    "https://github.com/mhmzdev/Here-I-Am-Alert-App",
-    "https://github.com/mhmzdev/Here-I-Am-Alert-App",
+    "https://github.com/suhrobcoder/recipe_app_flutter",
+    "https://github.com/suhrobcoder/MovieInfoApp-JetpackCompose",
+    "https://github.com/suhrobcoder/wordle_clone",
+    "https://github.com/suhrobcoder/kpop_info_app",
+    "https://github.com/suhrobcoder",
+    "https://github.com/suhrobcoder/expense_tracker",
   ];
 
   static const List<String> playStoreLinks = [
-    "https://pub.dev/packages/awesome_snackbar_content",
-    "https://github.com/mhmzdev/The_Holy_Quran_App",
-    "https://github.com/mhmzdev/MedKit-Pharmacy-App-Using-Flutter",
-    "https://github.com/mhmzdev/Here-I-Am-Alert-App",
-    "https://github.com/mhmzdev/Here-I-Am-Alert-App",
+    "https://play.google.com/store/apps/details?id=uz.suhrob.recipeapp",
+    "https://play.google.com/store/apps/details?id=uz.suhrob.movieinfoapp",
+    "https://play.google.com/store/apps/details?id=uz.suhrob.wordle_uz",
+    "https://play.google.com/store/apps/details?id=uz.suhrob.kpopinfo",
+    "https://play.google.com/store/apps/details?id=com.idealcoders.taxiapp",
+    "https://play.google.com/store/apps/details?id=uz.suhrob.spend_tracker",
   ];
 }

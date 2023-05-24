@@ -10,6 +10,7 @@ class ProjectCard extends StatefulWidget {
   final String? projectLink;
   final String? storeLink;
   final String? projectIcon;
+  final String? platformIcon;
   final String projectTitle;
   final String projectDescription;
   final IconData? projectIconData;
@@ -18,6 +19,7 @@ class ProjectCard extends StatefulWidget {
     Key? key,
     this.banner,
     this.projectIcon,
+    this.platformIcon,
     this.projectLink,
     this.storeLink,
     this.projectIconData,
@@ -86,9 +88,19 @@ class ProjectCardState extends State<ProjectCard> {
               children: [
                 widget.projectIcon != null
                     ? (width > 1135 || width < 950)
-                        ? Image.asset(
-                            widget.projectIcon!,
-                            height: height * 0.05,
+                        ? Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Image.asset(
+                                widget.projectIcon!,
+                                height: height * 0.05,
+                              ),
+                              const SizedBox(width: 16.0),
+                              Image.asset(
+                                widget.platformIcon!,
+                                height: height * 0.05,
+                              ),
+                            ],
                           )
                         : Row(
                             mainAxisSize: MainAxisSize.min,
