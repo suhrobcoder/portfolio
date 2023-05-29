@@ -23,7 +23,7 @@ class StaticUtils {
   ];
 
   static const String resume =
-      'https://github.com/suhrobcoder/portfolio/blob/main/assets/resume.pdf';
+      'https://github.com/suhrobcoder/portfolio/raw/main/assets/resume.pdf?raw=true';
 
   static const String gitHub = 'https://github.com/suhrobcoder';
 }
